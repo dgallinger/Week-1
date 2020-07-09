@@ -21,15 +21,15 @@ describe("/date", () => {
   });
 
   describe("GET /month", () => {
-    it("should return 5", async () => {
+    it("should return 7", async () => {
       const res = await request(server).get("/date/month");
       expect(res.statusCode).toEqual(200);
-      expect(res.body).toEqual({ month: 5 });
+      expect(res.body).toEqual({ month: 6 });
     });
   });
 
   describe("GET /day", () => {
-    it("should return 26", async () => {
+    it("should return 9", async () => {
       const res = await request(server).get("/date/day");
       expect(res.statusCode).toEqual(200);
       expect(res.body).toEqual({ day: 26 });
